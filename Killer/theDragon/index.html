@@ -1,0 +1,233 @@
+﻿<!--
+ **************************************************************************
+ * File name : Index.html                                                 *
+ * Author : Yaroslav Kabanov (300789196)                                  *
+ * Last Modified by : Yaroslav Kabanov(300789196)                         *
+ * Last Modified date : 2015 - 01 - 30                                    *
+ * Program description : This is web game application, goal is to kill    *
+ *   the victim and take his money.  User can choose 2 options per each   *
+ *   page, and user will be faced different result by their choices.       *
+ * Revision History : 1.0                                                 *
+ *************************************************************************/
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>KILLER</title>
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+<body>
+    <!--main page-->
+        <div id="impress">
+        <div id="intro" class="step slide">
+            <div class="slide-text">
+                <p>You are here, alone and free.</p>
+                <p>Death is you friend. </p>
+                <p>You came here to meet her.</p>
+                <p>GET money or die!</p>
+               <p> <img src="Images/house.png" width="100" /> </p>
+                <br />
+                <p>You see the house in front of you, which way you want to choice to make perfect shot?</p>
+                <p><a href="#doors_type_DL2">DOORs</a> or <a href="#windows_type_DR2">WINDOWs</a></p>
+               
+            </div> 
+        </div>
+<!-- page with doors type-->
+        <div id="doors_type_DL2" class="step slide" data-x="1500" data-y="800">
+            <div class="slide-text">
+              
+                <p> You almost inside... </p>
+                
+                <br />
+                <p> Make a choice, it can be fatal for you...</p>
+                <p><a href="#maindoor_DL3_1">MAIN</a> or <a href="#garage_DL3_2">GARAGE</a></p><br />
+                <a href="#intro">START AGAIN</a>
+
+            </div>
+        </div> 
+            <!--page with windows type-->
+        <div id="windows_type_DR2" class="step slide" data-x="-1500">
+            <div class="slide-text">
+                <p>It's look interesting, are you scary of glasses?</p>
+                
+                <br />
+                <p>Choice just one!</p>
+                <p><a href="#living_DR3_1">LIVING ROOM</a> or <a href="#lundry_DR3_2">LUNDRY</a></p>
+                <br />
+                <a href="#intro">START AGAIN</a>
+
+            </div> 
+           
+        </div>
+
+            <!--Main door kill method-->
+        <div id="maindoor_DL3_1" class="step slide" data-x="3000">
+            <div class="slide-text">
+                <p>You see the victim...</p>
+                <p>...and money here.</p>
+                <p>Just make a shot!</p>
+                <br />
+                <p> Choice the weapon!</p>
+                <p><a href="#killgun_DL4_1">GUN</a> or <a href="#killknife_DL4_2">KNIFE</a></p>
+                <br />
+                <a href="#doors_type_DL2">Previous</a> or <a href="#garage_DL3_2">Other choice</a>
+               </div>
+            </div>
+         
+            <!--Kill with gun-->
+
+            <div id="killgun_DL4_1" class="step slide" data-x="4500">
+                <div class="slide-text">
+                    <p> You hit him!</p>
+                    <p> But it's too loud and security caught you! </p>
+                    <p>LEVEL FAILED</p>
+                   
+                    <br />
+                    <a href="#maindoor_DL3_1">Previous</a> or <a href="#killknife_DL4_2">Other choice</a>
+                   
+                </div>
+            </div>
+            <!--KILL WITH KNIFE-->
+            <div id="killknife_DL4_2" class="step slide" data-x="4600">
+                <div class="slide-text">
+                    <p>You killed with knife...</p>
+                    <p>Good job! </p>
+                    <p>Take money and..</p>
+                    <p>get out of here!</p>
+                    <br />
+
+                    <a href="#maindoor_DL3_1">Previous</a> or <a href="#killgun_DL4_1">Other choice</a> or <a href="#intro">START AGAIN</a>
+
+                </div>
+            </div>
+
+            <!--Garage door kill method-->
+            <div id="garage_DL3_2" class="step slide" data-x="-3000">
+                <div class="slide-text">
+                    <p> You are inside, but there is somebody here...
+                    <br />
+                    <p>What will you do?</p>
+                    <p><a href="#run_DL4_3">RUN</a> or <a href="#Qkillknife_DL4_4">THROW KNIFE</a></p>
+                    <br />
+                    <a href="#maindoor_DL3_1">Previous</a> or <a href="#doors_type_DL2">Other choice</a>
+                </div>
+            </div>
+            <!--GARAGE RUN-->
+            <div id="run_DL4_3" class="step slide" data-x="6000">
+                <div class="slide-text">
+                    <p> ARE YOU RUNNER?</p>
+                    <p>Or killer? </p>
+                    <p>Level failed.</p>
+                    <br />
+
+                    <a href="#garage_DL3_2">Previous</a> or <a href="#Qkillknife_DL4_4">Other choice</a> or <a href="#intro">START AGAIN</a>
+
+                </div>
+            </div>  
+            <!--GARAGE KNIFE-->
+            <div id="Qkillknife_DL4_4" class="step slide" data-x="-6000">
+                <div class="slide-text">
+                    <p> You are like assasin!</p>
+                    <p>GET MONEY, LEVEL DONE</p>
+                    <br />
+                    <a href="#garage_DL3_2">Previous</a> or <a href="#run_DL4_3">Other choice</a> or <a href="#intro">START AGAIN</a>
+
+                </div>
+            </div>
+
+           
+    <!--PAGE LIVING ROOM-->
+    <div id="living_DR3_1" class="step slide" data-x="7500">
+        <div class="slide-text">
+            <p> So, you decided to go directly</p>
+
+            <br />
+            <p>Wanna make a shot through the window or enter and make it without noise?</p>
+            <p><a href="#killgunL_DR4_1">KILL WITH GUN</a> or <a href="#enterfirst_DR4_2">ENTER FIRST</a></p>
+            <br />
+            <a href="#windows_type_DR2">Previous</a> or <a href="#lundry_DR3_2">Other choice</a> or <a href="#intro">START AGAIN</a>
+
+        </div>
+        </div>
+
+        <!--page if you kill with gun through windows-->
+        <div id="killgunL_DR4_1" class="step slide" data-x="9000">
+            <div class="slide-text">
+                <p> Professional shot!</p>
+                <p>Too loud! And security is coming, cannot take money :(</p>
+                <p>LEVEL FAILED</p>
+       
+                <br />
+                <a href="#living_DR3_1">Previous</a> or <a href="#enterfirst_DR4_2">Other choice</a> or or <a href="#intro">START AGAIN</a>
+
+            </div>
+        </div>
+            <!--ENTER first scenario-->
+            <div id="enterfirst_DR4_2" class="step slide" data-x="-9000">
+                <div class="slide-text">
+                    <p> Your killed victims!</p>
+                    <p>GET money</p>
+                    <p>LEVEL DONE</p>
+
+
+                    <br />
+                    <a href="#living_DR3_1">Previous</a> or <a href="#killgunL_DR4_1">Other choice</a> or or <a href="#intro">START AGAIN</a>
+
+
+                </div>
+            </div>
+
+            <!--PAGE LUNDRY ROOM-->
+            <div id="lundry_DR3_2" class="step slide" data-x="10500">
+                <div class="slide-text">
+                    <p>Wanna do some lundry or find and kill him?</p>
+                    <br />
+                    <p>Here is box, want to see?</p>
+                    <p><a href="#checkbox_DR4_3">CHECK BOX</a> or <a href="#leavebox_DR4_4">LEAVE IT</a></p>
+
+                    <br />
+                    <a href="#windows_type_DR2">Previous</a> or <a href="#living_DR3_1">Other choice</a> or or <a href="#intro">START AGAIN</a>
+
+                </div>
+            </div>
+            
+            <!--cHECK BOX-->
+            <div id="checkbox_DR4_3" class="step slide" data-x="12000">
+                <div class="slide-text">
+                    <p> BOOM!</p>
+                    <p> BOOM!</p>
+                    <p>LEVEL FAILED</p>
+
+                    <br />
+                    <a href="#lundry_DR3_2">Previous</a> or <a href="#leavebox_DR4_4">Other choice</a> or or <a href="#intro">START AGAIN</a>
+
+
+                </div>
+            </div>
+
+
+            <!--leave box-->
+            <div id="leavebox_DR4_4" class="step slide" data-x="-12000">
+                <div class="slide-text">
+                    <p> GO back</p>
+                    <p>YOU ARE LOST</p>
+                    <p>LEVEL FAILED</p>
+                    <br />
+                    <a href="#lundry_DR3_2">Previous</a> or <a href="#checkbox_DR4_3">Other choice</a> or or <a href="#intro">START AGAIN</a>
+
+                </div>
+            </div>
+</div>
+        <!-- JavaScript Section -->
+        <script src="js/impress.js"></script>
+        <script>impress().init();</script>
+    <audio controls="controls" autoplay loop style="display: none;">
+        <source src="Sounds/bg.mp3" type="audio/mpeg" />
+    </audio>
+</body>
+</html>
